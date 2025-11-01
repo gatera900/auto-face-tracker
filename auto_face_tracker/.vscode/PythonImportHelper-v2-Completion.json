@@ -1,0 +1,236 @@
+[
+    {
+        "label": "cv2",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "cv2",
+        "description": "cv2",
+        "detail": "cv2",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "serial",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "serial",
+        "description": "serial",
+        "detail": "serial",
+        "documentation": {}
+    },
+    {
+        "label": "urllib.request",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "urllib.request",
+        "description": "urllib.request",
+        "detail": "urllib.request",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "done",
+        "description": "done",
+        "peekOfCode": "def main():\n    # ---- Connect to Arduino ----\n    try:\n        arduino = serial.Serial(SERIAL_PORT, BAUD_RATE, timeout=1)\n        time.sleep(2)\n        print(f\"[OK] Connected to Arduino on {SERIAL_PORT}\")\n    except Exception as e:\n        print(\"[ERROR] Could not connect to Arduino:\", e)\n        arduino = None\n    # ---- Load cascade ----",
+        "detail": "done",
+        "documentation": {}
+    },
+    {
+        "label": "CASCADE_PATH",
+        "kind": 5,
+        "importPath": "done",
+        "description": "done",
+        "peekOfCode": "CASCADE_PATH = './haarcascade_frontalface_default.xml'\nCAM_IDX = 0\nFRAME_SIZE = (800, 600)\nFONT = cv2.FONT_HERSHEY_SIMPLEX\nSERIAL_PORT = 'COM13'\nBAUD_RATE = 9600\n# --- Motor tuning ---\nMAX_ROTATE_STEP = 10       # max degrees per command\nTHRESHOLD = 20             # minimum pixels offset to start correction\nSMOOTH_FACTOR = 0.04       # smaller = smoother (0.03–0.1 is good)",
+        "detail": "done",
+        "documentation": {}
+    },
+    {
+        "label": "CAM_IDX",
+        "kind": 5,
+        "importPath": "done",
+        "description": "done",
+        "peekOfCode": "CAM_IDX = 0\nFRAME_SIZE = (800, 600)\nFONT = cv2.FONT_HERSHEY_SIMPLEX\nSERIAL_PORT = 'COM13'\nBAUD_RATE = 9600\n# --- Motor tuning ---\nMAX_ROTATE_STEP = 10       # max degrees per command\nTHRESHOLD = 20             # minimum pixels offset to start correction\nSMOOTH_FACTOR = 0.04       # smaller = smoother (0.03–0.1 is good)\nSEND_INTERVAL = 0.05        # seconds between commands",
+        "detail": "done",
+        "documentation": {}
+    },
+    {
+        "label": "FRAME_SIZE",
+        "kind": 5,
+        "importPath": "done",
+        "description": "done",
+        "peekOfCode": "FRAME_SIZE = (800, 600)\nFONT = cv2.FONT_HERSHEY_SIMPLEX\nSERIAL_PORT = 'COM13'\nBAUD_RATE = 9600\n# --- Motor tuning ---\nMAX_ROTATE_STEP = 10       # max degrees per command\nTHRESHOLD = 20             # minimum pixels offset to start correction\nSMOOTH_FACTOR = 0.04       # smaller = smoother (0.03–0.1 is good)\nSEND_INTERVAL = 0.05        # seconds between commands\n# -------------------------------------------------------------",
+        "detail": "done",
+        "documentation": {}
+    },
+    {
+        "label": "FONT",
+        "kind": 5,
+        "importPath": "done",
+        "description": "done",
+        "peekOfCode": "FONT = cv2.FONT_HERSHEY_SIMPLEX\nSERIAL_PORT = 'COM13'\nBAUD_RATE = 9600\n# --- Motor tuning ---\nMAX_ROTATE_STEP = 10       # max degrees per command\nTHRESHOLD = 20             # minimum pixels offset to start correction\nSMOOTH_FACTOR = 0.04       # smaller = smoother (0.03–0.1 is good)\nSEND_INTERVAL = 0.05        # seconds between commands\n# -------------------------------------------------------------\ndef main():",
+        "detail": "done",
+        "documentation": {}
+    },
+    {
+        "label": "SERIAL_PORT",
+        "kind": 5,
+        "importPath": "done",
+        "description": "done",
+        "peekOfCode": "SERIAL_PORT = 'COM13'\nBAUD_RATE = 9600\n# --- Motor tuning ---\nMAX_ROTATE_STEP = 10       # max degrees per command\nTHRESHOLD = 20             # minimum pixels offset to start correction\nSMOOTH_FACTOR = 0.04       # smaller = smoother (0.03–0.1 is good)\nSEND_INTERVAL = 0.05        # seconds between commands\n# -------------------------------------------------------------\ndef main():\n    # ---- Connect to Arduino ----",
+        "detail": "done",
+        "documentation": {}
+    },
+    {
+        "label": "BAUD_RATE",
+        "kind": 5,
+        "importPath": "done",
+        "description": "done",
+        "peekOfCode": "BAUD_RATE = 9600\n# --- Motor tuning ---\nMAX_ROTATE_STEP = 10       # max degrees per command\nTHRESHOLD = 20             # minimum pixels offset to start correction\nSMOOTH_FACTOR = 0.04       # smaller = smoother (0.03–0.1 is good)\nSEND_INTERVAL = 0.05        # seconds between commands\n# -------------------------------------------------------------\ndef main():\n    # ---- Connect to Arduino ----\n    try:",
+        "detail": "done",
+        "documentation": {}
+    },
+    {
+        "label": "MAX_ROTATE_STEP",
+        "kind": 5,
+        "importPath": "done",
+        "description": "done",
+        "peekOfCode": "MAX_ROTATE_STEP = 10       # max degrees per command\nTHRESHOLD = 20             # minimum pixels offset to start correction\nSMOOTH_FACTOR = 0.04       # smaller = smoother (0.03–0.1 is good)\nSEND_INTERVAL = 0.05        # seconds between commands\n# -------------------------------------------------------------\ndef main():\n    # ---- Connect to Arduino ----\n    try:\n        arduino = serial.Serial(SERIAL_PORT, BAUD_RATE, timeout=1)\n        time.sleep(2)",
+        "detail": "done",
+        "documentation": {}
+    },
+    {
+        "label": "THRESHOLD",
+        "kind": 5,
+        "importPath": "done",
+        "description": "done",
+        "peekOfCode": "THRESHOLD = 20             # minimum pixels offset to start correction\nSMOOTH_FACTOR = 0.04       # smaller = smoother (0.03–0.1 is good)\nSEND_INTERVAL = 0.05        # seconds between commands\n# -------------------------------------------------------------\ndef main():\n    # ---- Connect to Arduino ----\n    try:\n        arduino = serial.Serial(SERIAL_PORT, BAUD_RATE, timeout=1)\n        time.sleep(2)\n        print(f\"[OK] Connected to Arduino on {SERIAL_PORT}\")",
+        "detail": "done",
+        "documentation": {}
+    },
+    {
+        "label": "SMOOTH_FACTOR",
+        "kind": 5,
+        "importPath": "done",
+        "description": "done",
+        "peekOfCode": "SMOOTH_FACTOR = 0.04       # smaller = smoother (0.03–0.1 is good)\nSEND_INTERVAL = 0.05        # seconds between commands\n# -------------------------------------------------------------\ndef main():\n    # ---- Connect to Arduino ----\n    try:\n        arduino = serial.Serial(SERIAL_PORT, BAUD_RATE, timeout=1)\n        time.sleep(2)\n        print(f\"[OK] Connected to Arduino on {SERIAL_PORT}\")\n    except Exception as e:",
+        "detail": "done",
+        "documentation": {}
+    },
+    {
+        "label": "SEND_INTERVAL",
+        "kind": 5,
+        "importPath": "done",
+        "description": "done",
+        "peekOfCode": "SEND_INTERVAL = 0.05        # seconds between commands\n# -------------------------------------------------------------\ndef main():\n    # ---- Connect to Arduino ----\n    try:\n        arduino = serial.Serial(SERIAL_PORT, BAUD_RATE, timeout=1)\n        time.sleep(2)\n        print(f\"[OK] Connected to Arduino on {SERIAL_PORT}\")\n    except Exception as e:\n        print(\"[ERROR] Could not connect to Arduino:\", e)",
+        "detail": "done",
+        "documentation": {}
+    },
+    {
+        "label": "url",
+        "kind": 5,
+        "importPath": "download_cascade",
+        "description": "download_cascade",
+        "peekOfCode": "url = \"https://raw.githubusercontent.com/opencv/opencv/master/data/haarcascades/haarcascade_frontalface_default.xml\"\nurllib.request.urlretrieve(url, \"haarcascade_frontalface_default.xml\")\nprint(\"Downloaded haarcascade_frontalface_default.xml\")",
+        "detail": "download_cascade",
+        "documentation": {}
+    },
+    {
+        "label": "SERIAL_PORT",
+        "kind": 5,
+        "importPath": "index",
+        "description": "index",
+        "peekOfCode": "SERIAL_PORT = \"COM8\"      # <-- change to your Arduino port\nBAUD_RATE = 9600\nFRAME_WIDTH = 1280\nFRAME_HEIGHT = 720\nCENTER_TOLERANCE = 100    # pixels before movement\n# === SETUP ===\nser = serial.Serial(SERIAL_PORT, BAUD_RATE, timeout=1)\ntime.sleep(2)  # Wait for Arduino to initialize\nface_cascade = cv2.CascadeClassifier(\"haarcascade_frontalface_default.xml\")\ncap = cv2.VideoCapture(0)",
+        "detail": "index",
+        "documentation": {}
+    },
+    {
+        "label": "BAUD_RATE",
+        "kind": 5,
+        "importPath": "index",
+        "description": "index",
+        "peekOfCode": "BAUD_RATE = 9600\nFRAME_WIDTH = 1280\nFRAME_HEIGHT = 720\nCENTER_TOLERANCE = 100    # pixels before movement\n# === SETUP ===\nser = serial.Serial(SERIAL_PORT, BAUD_RATE, timeout=1)\ntime.sleep(2)  # Wait for Arduino to initialize\nface_cascade = cv2.CascadeClassifier(\"haarcascade_frontalface_default.xml\")\ncap = cv2.VideoCapture(0)\ncap.set(3, FRAME_WIDTH)",
+        "detail": "index",
+        "documentation": {}
+    },
+    {
+        "label": "FRAME_WIDTH",
+        "kind": 5,
+        "importPath": "index",
+        "description": "index",
+        "peekOfCode": "FRAME_WIDTH = 1280\nFRAME_HEIGHT = 720\nCENTER_TOLERANCE = 100    # pixels before movement\n# === SETUP ===\nser = serial.Serial(SERIAL_PORT, BAUD_RATE, timeout=1)\ntime.sleep(2)  # Wait for Arduino to initialize\nface_cascade = cv2.CascadeClassifier(\"haarcascade_frontalface_default.xml\")\ncap = cv2.VideoCapture(0)\ncap.set(3, FRAME_WIDTH)\ncap.set(4, FRAME_HEIGHT)",
+        "detail": "index",
+        "documentation": {}
+    },
+    {
+        "label": "FRAME_HEIGHT",
+        "kind": 5,
+        "importPath": "index",
+        "description": "index",
+        "peekOfCode": "FRAME_HEIGHT = 720\nCENTER_TOLERANCE = 100    # pixels before movement\n# === SETUP ===\nser = serial.Serial(SERIAL_PORT, BAUD_RATE, timeout=1)\ntime.sleep(2)  # Wait for Arduino to initialize\nface_cascade = cv2.CascadeClassifier(\"haarcascade_frontalface_default.xml\")\ncap = cv2.VideoCapture(0)\ncap.set(3, FRAME_WIDTH)\ncap.set(4, FRAME_HEIGHT)\nprint(\"Face tracking started... Press 'q' to quit.\")",
+        "detail": "index",
+        "documentation": {}
+    },
+    {
+        "label": "CENTER_TOLERANCE",
+        "kind": 5,
+        "importPath": "index",
+        "description": "index",
+        "peekOfCode": "CENTER_TOLERANCE = 100    # pixels before movement\n# === SETUP ===\nser = serial.Serial(SERIAL_PORT, BAUD_RATE, timeout=1)\ntime.sleep(2)  # Wait for Arduino to initialize\nface_cascade = cv2.CascadeClassifier(\"haarcascade_frontalface_default.xml\")\ncap = cv2.VideoCapture(0)\ncap.set(3, FRAME_WIDTH)\ncap.set(4, FRAME_HEIGHT)\nprint(\"Face tracking started... Press 'q' to quit.\")\nwhile True:",
+        "detail": "index",
+        "documentation": {}
+    },
+    {
+        "label": "ser",
+        "kind": 5,
+        "importPath": "index",
+        "description": "index",
+        "peekOfCode": "ser = serial.Serial(SERIAL_PORT, BAUD_RATE, timeout=1)\ntime.sleep(2)  # Wait for Arduino to initialize\nface_cascade = cv2.CascadeClassifier(\"haarcascade_frontalface_default.xml\")\ncap = cv2.VideoCapture(0)\ncap.set(3, FRAME_WIDTH)\ncap.set(4, FRAME_HEIGHT)\nprint(\"Face tracking started... Press 'q' to quit.\")\nwhile True:\n    ret, frame = cap.read()\n    if not ret:",
+        "detail": "index",
+        "documentation": {}
+    },
+    {
+        "label": "face_cascade",
+        "kind": 5,
+        "importPath": "index",
+        "description": "index",
+        "peekOfCode": "face_cascade = cv2.CascadeClassifier(\"haarcascade_frontalface_default.xml\")\ncap = cv2.VideoCapture(0)\ncap.set(3, FRAME_WIDTH)\ncap.set(4, FRAME_HEIGHT)\nprint(\"Face tracking started... Press 'q' to quit.\")\nwhile True:\n    ret, frame = cap.read()\n    if not ret:\n        break\n    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)",
+        "detail": "index",
+        "documentation": {}
+    },
+    {
+        "label": "cap",
+        "kind": 5,
+        "importPath": "index",
+        "description": "index",
+        "peekOfCode": "cap = cv2.VideoCapture(0)\ncap.set(3, FRAME_WIDTH)\ncap.set(4, FRAME_HEIGHT)\nprint(\"Face tracking started... Press 'q' to quit.\")\nwhile True:\n    ret, frame = cap.read()\n    if not ret:\n        break\n    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)\n    faces = face_cascade.detectMultiScale(gray, 1.1, 7, minSize=(120, 120))",
+        "detail": "index",
+        "documentation": {}
+    }
+]
